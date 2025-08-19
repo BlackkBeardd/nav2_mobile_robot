@@ -39,9 +39,6 @@ def generate_launch_description():
         arguments=["-d", rviz_path],
     )
 
-    ld = LaunchDescription()
-    ld.add_action(robot_state_publisher_node)
-    ld.add_action(joint_state_publisher_gui)
-    ld.add_action(rviz2_node)
-
-    return ld
+    return LaunchDescription(
+        [robot_state_publisher_node, joint_state_publisher_gui, rviz2_node]
+    )
