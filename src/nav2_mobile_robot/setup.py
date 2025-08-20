@@ -14,6 +14,7 @@ setup(
             [
                 "launch/display.launch.py",
                 "launch/gazebo.launch.py",
+                "launch/slam.launch.py",
                 "urdf/nav2_mobile_robot.xacro",
                 "urdf/gazebo_control.xacro",
                 "urdf/lidar.xacro",
@@ -21,6 +22,7 @@ setup(
                 "urdf/odom_plugin.xacro",
                 "rviz/rviz.rviz",
                 "worlds/maze.sdf",
+                "config/slam.yaml",
             ],
         ),
     ],
